@@ -47,9 +47,9 @@ public class Person
             var person = new Person
             {
                 Id = 1,
-                FirstName = "John",
-                LastName = "Doe",
-                Age = 30
+                FirstName = "Servan",
+                LastName = "KILINC",
+                Age = 24
             };
 
             // JSON formatında sonuç döndür
