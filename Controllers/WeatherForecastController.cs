@@ -8,7 +8,7 @@ namespace WeatherApi.Controllers
     {
         private static readonly string[] Summaries = new[]
         {
-        "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
+        "Dondurucu", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
     };
 
         public class Person
@@ -54,5 +54,6 @@ namespace WeatherApi.Controllers
             // JSON formatında sonuç döndür
             return new JsonResult(person);
         }
+ 
     }
 }
