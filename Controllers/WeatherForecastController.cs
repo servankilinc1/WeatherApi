@@ -11,6 +11,13 @@ namespace WeatherApi.Controllers
         "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
     };
 
+public class Person
+{
+    public int Id { get; set; }
+    public string FirstName { get; set; }
+    public string LastName { get; set; }
+    public int Age { get; set; }
+}
 
 
 
@@ -31,6 +38,22 @@ namespace WeatherApi.Controllers
                 Summary = Summaries[Random.Shared.Next(Summaries.Length)]
             })
             .ToArray();
+        }
+
+        [HttpGet]
+        public IActionResult GetPerson()
+        {
+            // Örnek bir kişi oluştur
+            var person = new Person
+            {
+                Id = 1,
+                FirstName = "John",
+                LastName = "Doe",
+                Age = 30
+            };
+
+            // JSON formatında sonuç döndür
+            return new JsonResult(person);
         }
     }
 }
