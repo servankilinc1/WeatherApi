@@ -11,13 +11,13 @@ namespace WeatherApi.Controllers
         "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
     };
 
-public class Person
-{
-    public int Id { get; set; }
-    public string FirstName { get; set; }
-    public string LastName { get; set; }
-    public int Age { get; set; }
-}
+        public class Person
+        {
+            public int Id { get; set; }
+            public string FirstName { get; set; }
+            public string LastName { get; set; }
+            public int Age { get; set; }
+        }
 
 
 
@@ -40,7 +40,7 @@ public class Person
             .ToArray();
         }
 
-        [HttpGet]
+        [HttpGet(Name = "GetPerson")]
         public IActionResult GetPerson()
         {
             // Örnek bir kişi oluştur
