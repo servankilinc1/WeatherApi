@@ -45,8 +45,7 @@ public class Person
         {
             // Örnek bir kişi oluştur
             var person = new Person
-            {
-                Id = 1,
+            { 
                 FirstName = "Servan",
                 LastName = "KILINC",
                 Age = 24
